@@ -1,3 +1,73 @@
-body{
-  background-color:pink;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+.bg {
+  background-image:assets("kirthuarun.jpg");
+  filter:blur(8px);
+  backdrop-filter:blur(8px);
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: -1;
+}
+.bg img {
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 17.5px );
+  -webkit-backdrop-filter: blur( 17.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom:0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.bg-text{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-style: italic;
+  font-weight:lighter;
+  border: 3px lighter #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-text img {
+  width: 100px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #D1D8EC;
+  -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+  box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+}
+
+.icon1:hover{
+  background-color:lightslategrey;
+  color:whitesmoke;
+}
+
+.icon{
+  background-color:black;
+  border-radius: 50px;
+  color:whitesmoke;
+}
+}
+
